@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   if (user === 'admin' && pass === 'password123') {
     next(); // If authenticated, continue
   } else {
-    res.status(401).send('Unauthorized');
+    res.status(401).send('Get out brother'); // Unauthorized হলে এই বার্তা দেখাবে
   }
 });
 
